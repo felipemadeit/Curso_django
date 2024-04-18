@@ -1,0 +1,13 @@
+{% extends 'layouts/base.html' %}
+
+{% block content %}
+
+<h1>Create a project</h1>
+
+<form method = "POST">
+    {{form}}
+    <button>Save project</button>
+    {% csrf_token %}
+</form>
+
+{% endblock %}
